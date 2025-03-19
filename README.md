@@ -4,4 +4,4 @@
 <br>
 [**homework2-2**](https://parkjunyeop0810.github.io/homework2-2.html)
 <br>
-[**homework2-3**](https://parkjunyeop0810.github.io/homework2-3.htm)
+[**homework2-3**](https://parkjunyeop0810.github.io/homework2-3.html)
