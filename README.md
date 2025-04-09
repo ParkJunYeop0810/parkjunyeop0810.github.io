@@ -17,4 +17,4 @@
 <br>
 [**[homework3-4]**]()실행결과 캡쳐본
 <br>
-[**[homework3-5]**](https://github.com/ParkJunYeop0810/parkjunyeop0810.github.io/blob/main/homewrok3-5.jpg)실행결과 캡쳐본
+[**[homework3-5]**](parkjunyeop0810.github.io/homework3-5.JPG)실행결과 캡쳐본
