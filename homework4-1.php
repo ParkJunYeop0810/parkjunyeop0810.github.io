@@ -1,4 +1,4 @@
-<?php
+<?ph
 // ticket_form.php
 ?>
 <form action="ticket_submit.php" method="post">
