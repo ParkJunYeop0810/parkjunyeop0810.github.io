@@ -28,6 +28,6 @@
 [**[homework4-2]**](https://github.com/ParkJunYeop0810/parkjunyeop0810.github.io/blob/main/homework4-2.php)
 <br>
 <br>
-[**[homework5]**](https://github.com/ParkJunYeop0810/parkjunyeop0810.github.io/blob/main/homework-5)
+[**[homework5]**](https://github.com/ParkJunYeop0810/parkjunyeop0810.github.io/blob/main/homework-5.html)
 <br>
 [**[homework5-1]**](https://parkjunyeop0810.github.io/homework-5.html)실행
