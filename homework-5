@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>카페 메뉴 계산기</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+      color: #5a3e36;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .menu-item label {
+      flex: 1;
+    }
+    .menu-item input {
+      width: 80px;
+      padding: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #5a3e36;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3e2c26;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+      color: #333;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>스타벅스 메뉴 계산기</h2>
+
+  <div class="menu-item">
+    <label for="아이스아메리카노">아이스아메리카노 (4,500원)</label>
+    <input type="number" id="아이스아메리카노" value="0" min="0">
+  </div>
+
+  <div class="menu-item">
+    <label for="카푸치노">카푸치노 (5,000원)</label>
+    <input type="number" id="카푸치노" value="0" min="0">
+  </div>
+
+  <div class="menu-item">
+    <label for="에스프레소">에스프레소 (4,100원)</label>
+    <input type="number" id="에스프레소" value="0" min="0">
+  </div>
+
+  <div class="menu-item">
+    <label for="카페라테">카페라테 (5,300원)</label>
+    <input type="number" id="카페라테" value="0" min="0">
+  </div>
+
+  <button onclick="calculateTotal()">총 계산하기</button>
+
+  <div id="result"></div>
+
+  <script>
+    const prices = {
+      "아이스아메리카노": 4500,
+      "카푸치노": 5000,
+      "에스프레소": 4100,
+      "카페라테": 5300
+    };
+
+    function calculateTotal() {
+      let total = 0;
+      let summary = [];
+
+      for (let menu in prices) {
+        const qty = parseInt(document.getElementById(menu).value) || 0;
+        if (qty > 0) {
+          const subtotal = prices[menu] * qty;
+          total += subtotal;
+          summary.push(`${menu} ${qty}잔`);
+        }
+      }
+
+      const resultDiv = document.getElementById('result');
+      if (summary.length === 0) {
+        resultDiv.innerText = "하나 이상의 음료 수량을 입력해주세요.";
+      } else {
+        resultDiv.innerText = `선택한 음료:\n${summary.join(', ')}\n총 합계: ${total.toLocaleString()}원`;
+      }
+    }
+  </script>
+
+</body>
+</html>
